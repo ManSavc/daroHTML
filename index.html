@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="lt">
+
 <head>
     <!--  tai pagrindines kunas" ctrl '/' visa eilute|| ctrl+shift'/' kas pazymeta"-->
     <meta charset="UTF-8">
     <title>mano pirma programa </title>
 </head>
-
 <body>
 <header>
-<nav>
-  <div>apie</div>
-  <div>ateitis</div>
-  <nav>su nav</nav>
-</nav>
 </header>
-<h1>Taip, labas</h1>
-<p>Labas <br>  mano vardas <b title="Vardas">Mantv<em>y</em>das</btitle></p>
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid excepturi facilis harum itaque iusto non quaerat ullam. Accusantium assumenda cum deleniti dicta ea, eum harum laudantium molestias nemo nulla perferendis porro, provident quis sit soluta temporibus veritatis voluptates? Accusantium dignissimos dolorem earum fugit minus possimus provident repudiandae. Accusamus adipisci alias assumenda blanditiis consectetur cum delectus deserunt ducimus eaque eius esse explicabo facere fugit impedit incidunt labore magnam maxime mollitia nemo nesciunt nihil numquam obcaecati, odio, officiis perspiciatis porro quasi quia repellat, reprehenderit saepe similique unde ut veniam. At autem eveniet excepturi explicabo fuga iste laudantium molestiae perspiciatis, recusandae tempore vero?
-</p>
-<strong>
-    "Man labai patinka HTML"
-</strong><br>
-<font size="15">
-    JOP
-</font>
-<br><br><b><em> Taip </em> Einam</b>
-<footer> all rihts reserved </footer>
-</body>
+<h1>Payment form</h1>
+<p>Required fields * </p>
+<h2>Contact</h2>
+<form>
+        <label for="fname">Name:*</label>
+        <input type="text" id="fname" ><br><br>
+        <label for="E-mail">E-mail:*</label>
+        <input type="text" id="E-mail" name="E-mail"><br><br>
+        <label for="Password">Password:*</label>
+        <input type="text" id="Password" ><br>
+</form>
+<h2>Payment</h2>
+<label for="Card">Card</label>
+<select name="Card" id="Card">
+    <option value="auto1">visa</option>
+    <option value="auto2">master</option>
+    <option value="kitas3">paypal</option>
+    <option value="a4">maestro</option>
+</select>
+<form>
+    <br> <label for="cardNo">Card number: *</label>
+    <input type="text" id="cardNo" required><br><br>
+    <label for="Exp">Expiration date: * </label>
+    <input type="text" id="Exp" value="dd/mm/yyyy" required><br><br>
+
+</form>
+  <div>Agree with terms <input type="checkbox">
+
+  </div>
+
+    <button type="button">validate payment!</button>
 </html>
+<!--<strong>-->
+<!--    "Man labai patinka HTML"-->
+<!--</strong><br>-->
+<!--<font size="15">-->
+<!--    JOP-->
+<!--</font>-->
+
+
+
