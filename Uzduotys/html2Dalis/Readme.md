@@ -21,6 +21,7 @@ b.Po ketvirtąja antrašte (h4) įterpkite šiuos tris paveiksliukus (Faile port
 
 
 
+
 7.Paveiksliukų nuorodų užduotis
 a.Prie jau turimų paveiksliukų įterpkite dar du paveiksliukus. Galite naudoti iš kito internetinio tinklalapio, arba galite parsisiųsti ir panaudoti iš savo puslapio failų. Apribokite šių paveiksliukų plotį (width).
 b.Padarykite, kad paspaudus ant:

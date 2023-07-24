@@ -1,0 +1,37 @@
+.board {
+    height: 300px;
+    width: 300px;
+    display: block;
+    border: 2px solid black;
+
+    /* display: grid;*/
+    /* grid-template-columns: 100px,100px,100px,100px,100px;*/
+    /* grid-template-rows: 100px,100px,100px,100px,100px;*/
+    /*grid-gap: 10px;*/
+}
+.board> div{
+    display: flex;
+    position: relative;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
+    border: 2px solid green;
+    padding: 2px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.board>div:nth-child(odd){
+
+    background-color: yellow;
+
+}
+.board>div:nth-of-type(4n+4){
+    background-color: green;
+}
+
+.board>div:nth-of-type(2n+16){
+    background-color: blue;
+}

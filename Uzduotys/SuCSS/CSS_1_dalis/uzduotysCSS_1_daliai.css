@@ -1,0 +1,81 @@
+/*cia uzduociu cssas*/
+
+html {
+    color: blue;
+}
+
+ul[type] {
+    height: 100px;
+    width: 100%;
+}
+
+body > ul > li:nth-child(3) li:nth-child(3),
+body > ul > li:nth-child(1) li:nth-child(2) {
+    background: red;
+}
+
+body > ul > li:nth-child(1n) li:nth-child(2n){
+    font-size: 30px;;
+}
+
+/*div{*/
+/*    border-style:solid;*/
+/*    border-color: red ;*/
+/*    !*border-block: 2px;*!*/
+/*}*/
+
+div{
+    box-sizing: content-box;
+    /*width: 300px;*/
+    /*height: 100px;*/
+    padding: 10px;
+    border: 2px solid red;
+    background: black;
+}
+
+
+
+.newspaper  {
+    /*box-sizing: border-box;*/
+    margin-left: 20px;
+    column-count: 3;
+    column-rule-style: outset;
+    column-rule-width: 2px;
+    grid-template-columns: 10% 10% 10%;
+    /*width: 30%;*/
+    /*height: 100%;*/
+    /*border: 5px solid yellow;*/
+    /*float: left;*/
+}
+
+/*plius61 {*/
+/*    !*box-sizing: border-box;*!*/
+/*    */
+/*    width: 30%;*/
+/*    height: 100%;*/
+/*    border: 5px solid yellow;*/
+/*    float: left;*/
+/*}*/
+/*plius62{*/
+/*    box-sizing: border-box;*/
+/*    width: 40%;*/
+/*    height: 100%;*/
+/*    border: 5px solid green;*/
+/*    float: left;*/
+/*}*/
+/*plius63 {*/
+/*    box-sizing: border-box;*/
+/*    width: 30%;*/
+/*    height: 100%;*/
+/*    border: 5px solid red;*/
+/*    float: left;*/
+/*}*/
+/*li:nth-child(2){color:red}*/
+
+/*li:nth-last-child(1){color:chocolate}*/
+/*//li{display:inline;}*/
+/*//li{color:red;}*/
+/*//li{color:red;}*/
+/*li{color:blue;}*/
+/*body > *{border:1px solid hotpink;*/
+/*padding:20px;}*/
