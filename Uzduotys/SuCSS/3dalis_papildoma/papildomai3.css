@@ -1,0 +1,103 @@
+html {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-image: url("BICIU_SPIECIUS.jpg");*/
+}
+
+.item1 {
+    grid-area: logo;
+    text-align: center;
+}
+
+.item2 {
+    grid-area: header;
+    text-align: right;
+    text-combine-upright: all;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.item3 {
+    grid-area: sectionTop;
+    text-align: center;
+}
+
+.item5 {
+    grid-area: navigatio_area;
+    text-align: left;
+    font-size: 20px;
+}
+
+.item6 {
+    grid-area: content_area;
+    text-align: center;
+}
+
+.item6:hover img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.item6:hover img {
+    transform: scale(1.5);
+}
+
+.item8 {
+    grid-area: ad;
+    text-align: left;
+
+}
+
+.item10 {
+    grid-area: footer;
+    text-align: justify;
+    padding: 20px 0;
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+.item11 {
+    grid-area: footer3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15%  70%  15%;
+    grid-template-rows: 90px 50px auto;
+    grid-template-areas:
+    'logo header  header'
+    'sectionTop sectionTop sectionTop'
+    'navigatio_area content_area ad'
+    'navigatio_area content_area ad'
+    'navigatio_area footer footer3';
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    /*background-color: rgba(255, 255,0);*/
+    border: 1px solid black;
+    padding: 20px 0;
+}
+
+.box1 {
+    width: 300px;
+    height: 5px;
+    border: none;
+    position: absolute;
+    top: 60px;
+    right: 1%;
+}
+
+.box2 { /*logo box*/
+    width: 200px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    font-size: 30px;
+    font-family: ;
+}
