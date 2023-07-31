@@ -1,0 +1,110 @@
+html {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("beehive.jpg");
+
+  }
+
+.item1 {
+    grid-area: logo;
+    text-align: center;
+}
+
+.item2 {
+    grid-area: header;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+.item3 {
+    grid-area: space1;
+}
+
+/*.item4 { grid-area: search; } !**!*/
+.item5 {
+    grid-area: navigatio_area;
+    background-color: green;
+    text-align: left;
+    font-size: 20px;
+}
+
+.item6 {
+    grid-area: content_area;
+    text-align: center;
+}
+
+.item7 {
+    grid-area: calendar;
+    text-align: right;
+    padding: 20px 0;
+    font-size: 10px;
+}
+
+.item8 {
+    grid-area: ad;
+    text-align: right;
+}
+
+.item9 {
+    grid-area: footer1;
+}
+
+.item10 {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+.item11 {
+    grid-area: footer3;
+}
+
+/*  space3*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15%  auto  15%;
+    grid-template-areas:
+    'logo header  space1'
+    'navigatio_area content_area calendar'
+    'navigatio_area content_area ad'
+    'footer1 footer footer3';
+    gap: 10px;
+
+    /*background-color: images (1).jpg;*/
+    padding: 10px;
+}
+
+/*.item1{*/
+/*    text-align: left;*/
+/*    padding: 20px 0;*/
+/*    font-size: 20px;*/
+/*}*/
+
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+
+    /*text-align: center;*/
+    padding: 20px 0;
+    /*align-self: end;*/
+
+}
+
+.box {
+    width: 300px;
+    height: 5px;
+    border: none;
+
+    position: absolute;
+    top: 60px;
+    right: 5px;
+
+
+}

@@ -1,20 +1,28 @@
 /*cia uzduociu cssas*/
 
+/*=== CSS 1 dalis ===*/
+/*1. Nuspalvinkite visus sąrašų elementus mėlynai*/
 html {
     color: blue;
 }
 
-ul[type] {
+/*2. Uždėkite pakeiskite pagrindinio sąrašo antro
+elemento aukštį ir plotį į 100px X 100px*/
+//kad butu ryskiau, pazaliavau
+body > ul > li:nth-child(2){
+    background: green;
     height: 100px;
-    width: 100%;
+    width: 100px;
 }
-
-body > ul > li:nth-child(3) li:nth-child(3),
+/*3. Pagrindinio sąrašo trečiojo elemento trečiąjį
+elementą bei pagrindinio sąrašo pirmojo elemento
+ antrąjį elementą nuspalvinti raudonai.*/
+ body > ul > li:nth-child(3) li:nth-child(3),
 body > ul > li:nth-child(1) li:nth-child(2) {
     background: red;
 }
-
-body > ul > li:nth-child(1n) li:nth-child(2n){
+/*4. Kas antram elementui uždėti teksto pastorinimą.*/
+li > ul > li:nth-child(2n){
     font-size: 30px;;
 }
 
@@ -24,29 +32,65 @@ body > ul > li:nth-child(1n) li:nth-child(2n){
 /*    !*border-block: 2px;*!*/
 /*}*/
 
-div{
+/*5. Ribos (Boders):*/
+/*    Sukurti DIV elementą, kuriam nustatykite 2
+pikseliu storio raudona  linija su juodu fonu. Taip
+ pat pridėkite 10 pikselių padding'ą kad tekstas
+ butu atskirtas nuo rėmelio.*/
+body > div{
     box-sizing: content-box;
-    /*width: 300px;*/
-    /*height: 100px;*/
-    padding: 10px;
+     padding: 10px;
     border: 2px solid red;
     background: black;
 }
 
 
 
-.newspaper  {
+/*.newspaper  {*/
     /*box-sizing: border-box;*/
-    margin-left: 20px;
-    column-count: 3;
-    column-rule-style: outset;
-    column-rule-width: 2px;
-    grid-template-columns: 10% 10% 10%;
+    /*margin: 20px 20px 20px 20px;*/
+    /*column-count: 3;*/
+   /* column-rule-style: outset;*//*//kad tarp stulpeliu detu bruksnelius(spalvintu)*/
+   /* column-rule-width: 20px; *//*tarpas tarp stulpeliu*/
+   /* display: grid;*/
+   /* grid-template-columns: 50% auto 10%;*/
+   /* grid-template-rows: 40px 4em 40px;*/
+   /* grid-gap: 10px;*/
+   /* !*background-color: #2196F3;*!*/
+    /*padding: 10px;*/
+    /*text-align: center;*/
+
+
+.left {
+    position: absolute;
+    left: 0px;
+    width: 30%;
+    /*border: 3px solid green;*//*jeigu norim atkomentuojam, box'o remelis'*/
+    padding: 1%;
+}
+.middle {
+    position: absolute;
+    left: 34%;
+    width: 30%;
+    /*border: 3px solid darkred;*/
+    padding: 10px;
+}
+.right {
+    position: absolute;
+    right: 0px;
+    width: 30%;
+    /*border: 3px solid #73AD21;*/
+    padding: 1%;
+}
+
+
     /*width: 30%;*/
     /*height: 100%;*/
     /*border: 5px solid yellow;*/
     /*float: left;*/
 }
+
+
 
 /*plius61 {*/
 /*    !*box-sizing: border-box;*!*/
